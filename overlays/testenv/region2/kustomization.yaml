@@ -1,6 +1,5 @@
-namespace: dev
+namespace: testenv-apps
 resources:
-- ./../../../base
 - deployment.yaml
 - service.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
