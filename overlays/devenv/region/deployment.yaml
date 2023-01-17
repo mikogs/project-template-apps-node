@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-region
+  labels:
+    app: node-region
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: node-region
+  template:
+    metadata:
+      labels:
+        app: node-region
+    spec:
+      containers:
+        - name: node
+          image: node-image-placeholder
+          ports:
+            - containerPort: 8080

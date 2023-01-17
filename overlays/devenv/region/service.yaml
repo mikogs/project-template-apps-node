@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-region
+  labels:
+    app: node-region
+spec:
+  selector:
+    app: node-region
+  ports:
+    - name: tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 30111
+  type: NodePort
