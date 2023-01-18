@@ -7,4 +7,4 @@ kind: Kustomization
 images:
 - name: node-image-placeholder
   newName: mikogs/project-template-node
-  newTag: 2cd0fcc
+  newTag: 81c64df
