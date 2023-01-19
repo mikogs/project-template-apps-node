@@ -3,7 +3,3 @@ resources:
 - service.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: node-image-placeholder
-  newName: mikogs/project-template-node
-  newTag: d99f1ae
